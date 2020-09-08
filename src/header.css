@@ -7,13 +7,18 @@
 #Grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     column-gap: 20px;
     row-gap: 20px;
 }
 
 .Hook {
-    height: 150px;
+    height: auto;
     border: 1px solid lightgray;
     border-radius: 10px;
     box-shadow: 6px 10px 5px 0px rgba(230, 207, 230, 1)
+}
+
+.para {
+    margin: 0 5px 10px;
 }

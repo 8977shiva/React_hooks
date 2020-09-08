@@ -25,7 +25,7 @@ const Header = () => {
       <br />
 
       <div id="Grid">
-        <Link to="UseState">
+        <Link to="useState">
           <div className="Hook">
             <h3>UseState</h3>
             <p className="para">
@@ -35,19 +35,30 @@ const Header = () => {
             </p>
           </div>
         </Link>
-        <div className="Hook">
-          <h3>UseEffect</h3>
-          <p>
-            The Effect Hook lets you perform <b>side effects</b>in{" "}
-            <b>functional components</b>.It is a close replacemnet for{" "}
-            <b>componetDidMount, componentDidUpdate</b> and{" "}
-            <b>componentWithUnmont</b>
-          </p>
-        </div>
-        <div className="Hook">
-          UseState
-          <p>update State</p>
-        </div>
+        <Link to="useEffect">
+          <div className="Hook">
+            <h3>UseEffect</h3>
+            <p className="para">
+              The Effect Hook lets you perform <b>side effects</b>in{" "}
+              <b>functional components</b>.It is a close replacemnet for{" "}
+              <b>componetDidMount, componentDidUpdate</b> and{" "}
+              <b>componentWithUnmont</b>
+            </p>
+          </div>
+        </Link>
+        <Link to="useReducer">
+          <div className="Hook">
+            <h1>UseReducer</h1>
+            <p className="para">
+              {" "}
+              useReducer is usually preferable to useState when you have complex
+              state logic that involves multiple sub-values or when the next
+              state depends on the previous one. userReducer(reducer,
+              initialState) returns[currentState, dispatch]
+              reducer(currentState, action) is func
+            </p>
+          </div>
+        </Link>
       </div>
     </>
   );
