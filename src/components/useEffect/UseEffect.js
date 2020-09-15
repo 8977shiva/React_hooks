@@ -5,26 +5,26 @@ import MouseContainer from "./MouseContainer";
 const Effect = () => {
   const [count, setcount] = useState(0);
   const [name, setName] = useState("");
-  //every render
-  // useEffect(() => {
-  //   document.title = `You clicked ${count} times`;
-  //   console.log(count);
-  // });
-  //*componentDidUpdate
-
+  // every render
   useEffect(() => {
     document.title = `You clicked ${count} times`;
-    console.log(name);
-  }, [count]);
+    console.log(count);
+  });
+  //*componentDidUpdate
+
+  // useEffect(() => {
+  //   document.title = `You clicked ${count} times`;
+  //   console.log(name);
+  // }, [count]);
 
   return (
     <div>
-      {/* <input value={name} onChange={(e) => setName(e.target.value)} />
-      <button onClick={() => setcount(count + 1)}>Click {count} times</button> */}
-      {/* componentDidMount*/}
-      {/* <HookMouse /> */}
+      <input value={name} onChange={(e) => setName(e.target.value)} />
+      <button onClick={() => setcount(count + 1)}>Click {count} times</button>
+      {/* componentDidMount */}
+      <HookMouse />
       {/* componentWillUnmount */}
-      {/* <MouseContainer /> */}
+      <MouseContainer />
     </div>
   );
 };

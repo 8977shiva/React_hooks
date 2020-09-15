@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import UseState from "./components/useState/UseState";
 import Effect from "./components/useEffect/UseEffect";
 import Counter from "./components/useReducer/Counter";
+import ComponetA from "./components/useContext/ComponetA";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/useState" component={UseState} />
         <Route path="/useEffect" component={Effect} />
         <Route path="/useReducer" component={Counter} />
+        <Route path="/useContext" component={ComponetA} />
       </Switch>
     </div>
   );

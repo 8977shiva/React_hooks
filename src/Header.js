@@ -59,6 +59,17 @@ const Header = () => {
             </p>
           </div>
         </Link>
+        <Link to="useContext">
+          <div className="Hook">
+            <h1>UseContext</h1>
+            <p className="para">
+              {" "}
+              Accepts a context object (the value returned from
+              React.createContext) and returns the current context value for
+              that context.
+            </p>
+          </div>
+        </Link>
       </div>
     </>
   );
