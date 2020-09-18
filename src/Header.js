@@ -70,6 +70,31 @@ const Header = () => {
             </p>
           </div>
         </Link>
+        <Link to="useMemo">
+          <div className="Hook">
+            <h1>UseMemo</h1>
+            <p className="para">
+              {" "}
+              useMemo is a React hook that memorizes the output of a function.
+              useMemo accepts two arguments: a function and a list of
+              dependencies. useMemo will call the function and return its return
+              value. Then, every time you call useMemo again, it will first
+              check if any dependencies have changed
+            </p>
+          </div>
+        </Link>
+        <Link to="useRef">
+          <div className="Hook">
+            <h1>UseMemo</h1>
+            <p className="para">
+              useRef returns a mutable ref object whose .current property is
+              initialized to the passed argument ( initialValue ). The returned
+              object will persist for the full lifetime of the component.
+              Essentially, useRef is like a “box” that can hold a mutable value
+              in its .current property.
+            </p>
+          </div>
+        </Link>
       </div>
     </>
   );

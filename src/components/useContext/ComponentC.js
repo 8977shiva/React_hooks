@@ -4,16 +4,6 @@ import { userContext } from "./ComponetA";
 function ComponentC() {
   const userName = useContext(userContext);
 
-  const handleIframe = () => {
-    let pdfWindow = window.open("");
-    pdfWindow.document.write(
-      `<html>
-            <iframe src="https://research.google.com/pubs/archive/44678.pdf"
-     width="800px" height="600px" >
-            </html>`
-    );
-  };
-
   return (
     <div>
       <h1>using context hook</h1>
@@ -24,7 +14,6 @@ function ComponentC() {
           return <h3>{user}</h3>;
         }}
       </userContext.Consumer>
-      <button onClick={handleIframe}>iframe</button>
     </div>
   );
 }
